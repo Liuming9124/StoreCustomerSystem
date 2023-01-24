@@ -21,7 +21,7 @@ const homeController = {
         })
         .then(()=>{
             res.render('home',{
-                'show': show
+                'show': req.session.userName
             });
         })
         .then(() => session.close())

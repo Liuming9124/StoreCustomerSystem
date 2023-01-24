@@ -7,6 +7,8 @@ const loginController = require('../../controllers/loginctl.js')
 
 
 router.get('/', loginController.loginPage)
+router.post('/userlogin', loginController.userlogin)
+
 
 
 

@@ -1,9 +1,9 @@
 var express = require('express');
+var session      = require('express-session');  //用來儲存登入狀態
 var path    = require('path');
 var db      = require('./route/modules/db.js');
 var app     = express();
 var cookieParser = require('cookie-parser');
-var session      = require('express-session');
 
 
 
@@ -60,8 +60,8 @@ app.use((err, req, res, next) => {
 })
 
 
-app.listen(8000,function(){ //8000這個port
-  console.log("listen on http://localhost:8000")
+app.listen(7000,function(){ //8000這個port
+  console.log("listen on http://localhost:7000")
 })
 
 
