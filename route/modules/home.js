@@ -1,11 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
-const homeController = require('../../controllers/homectl')
+const homeCtl = require('../../controllers/homectl')
 
 
 
-router.get('/', homeController.homePage)
+router.get('/', homeCtl.homePage)
+router.post('/findcar', homeCtl.findcar)
 
 
 

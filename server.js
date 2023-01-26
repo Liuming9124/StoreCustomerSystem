@@ -60,7 +60,7 @@ app.use((err, req, res, next) => {
 })
 
 
-app.listen(7000,function(){ //8000這個port
+app.listen(7000,function(){ //7000這個port
   console.log("listen on http://localhost:7000")
 })
 
